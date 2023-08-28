@@ -18,7 +18,6 @@
  * Description: doubly linked list node structure
  * for stack, queues, LIFO, FIFO
  */
-
 typedef struct stack_s
 {
 	int n;
@@ -34,7 +33,6 @@ typedef struct stack_s
  * Description: opcode and its function
  * for stack, queues, LIFO, FIFO
  */
-
 typedef struct instruction_s
 {
 	char *opcode;
@@ -45,14 +43,11 @@ extern stack_t *head;
 typedef void (*op_func)(stack_t **, unsigned int);
 
 /*file operations*/
-
 void open_file(char *file_name);
 int parse_line(char *buffer, int line_number, int format);
 void read_file(FILE *);
 int len_chars(FILE *);
 void find_func(char *, char *, int, int);
-
-stack_t *head = NULL;
 
 /*Stack operations*/
 stack_t *create_node(int n);
